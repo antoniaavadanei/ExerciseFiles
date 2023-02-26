@@ -63,7 +63,6 @@ def food_collision():
         return True
     return False
 
-
 def game_loop():
     stamper.clearstamps()
 
@@ -92,8 +91,8 @@ def game_loop():
 
 def reset():
     global score, snake, snake_direction, food_pos
-
     snake = [[0, 0], [20, 0], [40, 0], [60, 0]]
+
     score = 0
 
     snake_direction = "up"
@@ -123,7 +122,6 @@ stamper.fillcolor("green")
 stamper.shapesize(19 / 20)
 stamper.penup()
 
-
 # Create the food
 food = turtle.Turtle()
 food.shape("circle")
@@ -134,3 +132,5 @@ food.penup()
 reset()
 # This statement (or an equivalent) is needed at the end of all your turtle programs.
 turtle.done()
+
+# reset to ask if we want to continue
